@@ -1,4 +1,8 @@
 const routers = [
+    {
+        path:'/',
+        redirect:'/home'
+    },
     // 登录
     {
         path: '/login',
