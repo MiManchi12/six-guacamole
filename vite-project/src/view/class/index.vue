@@ -1,7 +1,8 @@
 <template>
     <div>
-        课程
+        <router-view></router-view>
     </div>
+   
 </template>
 
 <script lang="ts">
