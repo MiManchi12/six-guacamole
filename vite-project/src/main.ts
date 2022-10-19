@@ -1,13 +1,15 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
+//import pinia from './stores'
 import router from './router/index'
 import Header from './components/Header/Header.vue'
 import Footer from './components/Footer/index.vue'
 import Video from './components/Video/Video.vue'
-import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
-
+//引入element-plus组件库的样式和中文
+import ElementPlus from 'element-plus'
+import zhCn from 'element-plus/es/locale/lang/zh-cn'
+import 'element-plus/dist/index.css'
 // import Vue from 'vue'
 // // 定义全局组件
 // import Header from './components/Header/index.vue'
@@ -16,8 +18,15 @@ import 'element-plus/dist/index.css'
 
 // Vue.component(Footer.name,Footer);
 
+
 const app = createApp(App)
 app.component('Header', Header)
 app.component('Footer', Footer)
 app.component('VideoCard', Video)
-app.use(router).use(ElementPlus).mount('#app')
+//挂载
+app.use(router)
+.use(ElementPlus,{
+    locale: zhCn,
+})
+.mount('#app')
+
