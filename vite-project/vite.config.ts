@@ -11,7 +11,7 @@ export default defineConfig({
     //配置代理跨域
     proxy: {
       '/api': {
-        target: 'https://www.dance365.com',
+        target: 'https://www.dance365.com/apis',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       },

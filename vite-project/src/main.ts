@@ -5,6 +5,7 @@ import router from './router/index'
 import Header from './components/Header/Header.vue'
 import Footer from './components/Footer/index.vue'
 import Video from './components/Video/Video.vue'
+import './style.css'
 import 'element-plus/dist/index.css'
 //引入element-plus组件库的样式和中文
 import ElementPlus from 'element-plus'
