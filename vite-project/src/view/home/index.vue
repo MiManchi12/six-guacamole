@@ -1,6 +1,7 @@
 <template>
     <div class="homeWrapper">
         <Header></Header>
+        <VideoCard></VideoCard>
         <Footer></Footer>
     </div>
 </template>

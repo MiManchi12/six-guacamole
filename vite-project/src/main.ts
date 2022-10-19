@@ -4,6 +4,7 @@ import App from './App.vue'
 import router from './router/index'
 import Header from './components/Header/Header.vue'
 import Footer from './components/Footer/index.vue'
+import Video from './components/Video/Video.vue'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
@@ -18,4 +19,5 @@ import 'element-plus/dist/index.css'
 const app = createApp(App)
 app.component('Header', Header)
 app.component('Footer', Footer)
+app.component('VideoCard', Video)
 app.use(router).use(ElementPlus).mount('#app')
