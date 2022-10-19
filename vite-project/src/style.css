@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    height: 100%;
+    margin: 0;
+    line-height: 1.15;
+}
+a{
+    text-decoration: none;
+    color:#111111;
+}
+button{
+    border: 0;
+    background-color: #fff;
+    color:#111111;
+    
+}
+li{
+    list-style: none;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
