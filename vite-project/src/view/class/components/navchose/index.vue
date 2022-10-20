@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>xianxia</h1>
+<h1>选择导航</h1>
     </div>
 </template>
 

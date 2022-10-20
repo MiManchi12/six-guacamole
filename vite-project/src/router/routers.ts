@@ -1,7 +1,7 @@
 const routers = [
     {
-        path:'/',
-        redirect:'/home'
+        path: '/',
+        redirect: '/home'
     },
     // 登录
     {
@@ -20,42 +20,43 @@ const routers = [
         path: '/class',
         name: 'Class',
         component: () => import('../view/class/index.vue'),
-        children:[
+        children: [
             {
-                path:'prefecture',
-                component: () => import('../view/class/prefecture/index.vue'),
-                meta:{
-                    title:'会员专区',
+                path: 'vip',
+                component: () => import('../view/class/vip/index.vue'),
+                meta: {
+                    title: '会员专区',
                 }
             },
             {
-                path:'video',
+                path: 'video',
                 component: () => import('../view/class/video/index.vue'),
-                meta:{
-                    title:'视频课',
+                meta: {
+                    title: '视频课',
                 }
             },
             {
-                path:'live',
+                path: 'live',
                 component: () => import('../view/class/live/index.vue'),
-                meta:{
-                    title:'直播课',
+                meta: {
+                    title: '直播课',
                 }
             },
             {
-                path:'offline',
+                path: 'offline',
                 component: () => import('../view/class/offline/index.vue'),
-                meta:{
-                    title:'线下课',
+                meta: {
+                    title: '线下课',
                 }
             },
             {
-                path:'subject',
+                path: 'subject',
                 component: () => import('../view/class/subject/index.vue'),
-                meta:{
-                    title:'主题',
+                meta: {
+                    title: '主题',
                 }
             },
+            
         ]
     },
     // 我的
